@@ -1,0 +1,41 @@
+Database name : eloc_search
+
+No of Tables : 3
+
+	1. eloc_info
+
+		CREATE TABLE `eloc_info` (                                
+             `id` int(11) NOT NULL AUTO_INCREMENT,                   
+             `_id` varchar(50) NOT NULL,                             
+             `name` varchar(50) NOT NULL,                            
+             `stt_id` varchar(11) NOT NULL,                          
+             `eloc` varchar(50) NOT NULL,                            
+             `type` varchar(11) NOT NULL,                            
+             `poi_type` varchar(11) NOT NULL,                        
+             `pty_srch` varchar(11) NOT NULL,                        
+             `pty_lbl` varchar(11) NOT NULL,                         
+             `keyword` varchar(11) DEFAULT NULL,                     
+             `remarks` varchar(11) DEFAULT NULL,                     
+             PRIMARY KEY (`id`)                                      
+           )
+	
+	2. eloc_type
+		
+		CREATE TABLE `eloc_type` (                                
+             `id` int(11) NOT NULL AUTO_INCREMENT,                   
+             `type` varchar(10) NOT NULL,                            
+             `att` varchar(255) NOT NULL,                            
+             `team` varchar(255) NOT NULL,                           
+             PRIMARY KEY (`id`)                                      
+           )
+
+	3. user_table
+
+		 CREATE TABLE `user_table` (                        
+              `user_id` varchar(50) NOT NULL,                  
+              `user_type` varchar(50) NOT NULL,                
+              `password` varchar(30) NOT NULL,                 
+              `Emp_Name` varchar(30) NOT NULL DEFAULT 'null',  
+              `Proj_Type` int(10) NOT NULL DEFAULT '0',        
+              PRIMARY KEY (`user_id`)                          
+            )

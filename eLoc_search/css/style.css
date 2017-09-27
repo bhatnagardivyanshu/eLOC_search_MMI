@@ -1,0 +1,72 @@
+
+	table { border-radius: 10% }
+	table#result tbody tr:hover { 
+		background-color: lightgrey;
+		/*color: white;*/
+		/*font-weight: 700;*/
+		transition: background-color 0.3s;
+	 }
+
+	 h3#head {
+	 	text-align: center;
+	 	border-bottom: 2px solid #f6f6f6;
+	 	margin: 0;
+	 	padding-bottom: 1em;
+	 	padding-top: 1em;
+	 }
+
+	 h3#line { 
+	 	/*width: 8.8em;*/
+	 	margin: 1em 0;
+	 	text-align: center;
+	 	line-height: 0.1em;
+	 	border-bottom: 2px solid skyblue;
+	}
+	 h3#line span{ 
+	 	text-align: center;
+	 	background-color: #fafafa;
+	 	/*padding: 2em;*/
+	 }
+
+	/* Box in the center */
+	.box_ctr #search_box {
+		padding: 0;
+	}
+
+	.box_ctr #search_box div:first-child {
+		padding: 1.8em;
+	}
+
+	.box_ctr #search_box div:nth-child(2) {
+		padding: 4em 6em;
+		padding-top: 2em;
+	}
+
+	.box_ctr #search_box > div > h3{
+		margin: 0;
+		padding: 1em;
+		/*padding: 3em 6em;*/
+		/*padding-top: 2em;*/
+	}
+		
+	.box_ctr #search_box form > * {
+		margin-top: 1.5em ;
+		margin-bottom: 1.5em ;
+	}
+
+	/* Box in the left */
+	#search_box div:first-child {
+		padding: 1em;
+	}
+
+	#search_box div:nth-child(2) {
+		padding: 2em;
+	}
+
+/* 	---------------
+		Modal
+	---------------*/
+
+	#admin_modal .modal-header { padding: 0 }
+	#admin_modal .modal-header .close { padding: 0.5em }
+	 #admin_modal .modal-header h3 { margin:0; padding: 1em }
